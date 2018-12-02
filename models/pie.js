@@ -2,9 +2,12 @@ const mongoose = require('mongoose');
 
 
 const pieSchema = new mongoose.Schema({
-  question: String,
-  choice1: String,
-  choice2: String,
+  question: {type: String, required: true},
+  choice1: {type: String, required: true},
+  choice2: {type: String, required: true},
+  choice3: String,
+  choice4: String,
+  category: {type: String, required: true},
 });
 
 

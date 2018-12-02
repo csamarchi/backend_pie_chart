@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 // food is the name of our database
 // that is automatically created
-mongoose.connect('mongodb://localhost/pie');
+mongoose.connect('mongodb://localhost/pie2');
 
 
 mongoose.connection.on('connected', () => {
