@@ -38,6 +38,7 @@ router.post('/', async (req, res) => {
 router.get('/:id', async (req, res, next) => {
    try  {
       const foundPie = await Pie.findById(req.params.id);
+      console.log(foundPie, 'MIRZA');
       res.json({
         status: 200,
         data: foundPie
